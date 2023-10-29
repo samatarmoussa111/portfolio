@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav className="py-10 mb-5 flex justify-between items-center">
       <Link href="/">
-        <Typography variant="h4">DEVELOPEDBYSB</Typography>
+        <Typography variant="h4"> {"< T3-Stack />"} </Typography>
       </Link>
       <ul className="flex items-center ">
         <li>

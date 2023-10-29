@@ -19,8 +19,11 @@ const Hero = () => {
           Full-stack Next.js Developer
         </Typography>
         <Typography variant="p" component="p">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum
-          iure quo alias. Earum maiores quis, quae necessitatibus doloremque
+          Software Engineer. I create complex and modern web applications with
+          Next.js using T3-Stack , Firebase or Strapi .
+          <Typography variant="p" component="p" className="mt-1">
+            Hire me to bring your future SaaS idea to life.
+          </Typography>
         </Typography>
       </div>
       <div className="flex items-center justify-center gap-5">
