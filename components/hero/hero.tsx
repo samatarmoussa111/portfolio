@@ -20,10 +20,8 @@ const Hero = () => {
         </Typography>
         <Typography variant="p" component="p">
           Software Engineer. I create complex and modern web applications with
-          Next.js using T3-Stack , Firebase or Strapi .
-          <Typography variant="p" component="p" className="mt-1">
-            Hire me to bring your future SaaS idea to life.
-          </Typography>
+          Next.js using T3-Stack , Firebase or Strapi. Hire me to bring your
+          future SaaS idea to life.
         </Typography>
       </div>
       <div className="flex items-center justify-center gap-5">
