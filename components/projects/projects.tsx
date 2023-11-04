@@ -1,8 +1,8 @@
-import Link from "next/link";
 import Container from "../container/container";
 import Typography from "../ui/typography";
 import ProjectCard from "./project-card";
-import { projectsList } from "./projects-list";
+
+import { allProjects } from "contentlayer/generated";
 
 const Projects = () => {
   return (
@@ -11,18 +11,8 @@ const Projects = () => {
         Projects
       </Typography>{" "}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8  mt-10 sm:mt-20">
-        {projectsList.map((project) => (
-          <div key={project.id} className="flex justify-center items-center">
-            <ProjectCard
-              id={project.id}
-              title={project.title}
-              description={project.description}
-              imgSrc={project.imgSrc}
-              techIcons={project.techIcons}
-              repoLink={project.repoLink}
-              sourceLink={project.sourceLink}
-            />
-          </div>
+        {allProjects.map((project, idx) => (
+          <ProjectCard key={idx} {...project} />
         ))}
       </div>
     </Container>

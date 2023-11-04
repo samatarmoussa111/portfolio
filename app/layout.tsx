@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/navigation/header";
+import Container from "@/components/container/container";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={montserrat.className}>
         <ThemeProvider
           attribute="class"
@@ -25,6 +30,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Container>
+            <Header />
+          </Container>
+
           {children}
         </ThemeProvider>
       </body>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+mjx-container {
+  display: inline-block;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

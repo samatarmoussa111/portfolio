@@ -6,7 +6,6 @@ import Skills from "@/components/skills/skills";
 export default function Home() {
   return (
     <Container className="min-h-screen">
-      <Header />
       <Hero />
       <Skills />
       <Projects />
